@@ -43,6 +43,8 @@ main:after {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 50px;
+    
 }
 
 .botoes-carrossel .botao {
