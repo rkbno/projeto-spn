@@ -56,10 +56,12 @@ main:after {
     cursor: pointer;
     border-color: #fff;
     
+    
 }
 
 .botoes-carrossel .botao.selecionado {
     background-color: #1d8346;
+    
 }
 
 .menu-lateral {
