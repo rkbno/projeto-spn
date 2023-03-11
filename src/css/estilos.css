@@ -1,0 +1,79 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes {
+    background-color: blueviolet;
+}
+
+.informacoes .logo {
+    max-width: 350px;
+    filter: invert(1);
+    margin-bottom: 80px;
+}
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.botoes-carrossel {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #fff;
+    
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: #1d8346;
+}
+
+.menu-lateral {
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-lateral .icone {
+    width: 30px;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.menu-lateral .icone:hover{
+    transform: scale(1.2);
+}
