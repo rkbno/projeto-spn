@@ -3,17 +3,26 @@ body {
     margin: 0 auto;
 }
 
+main:after {
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%) ;
+    z-index: -1;
+}
+
 .conteudo {
-    background-color: blue;
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-evenly;
 }
 
-.informacoes {
-    background-color: blueviolet;
-}
+
 
 .informacoes .logo {
     max-width: 350px;
@@ -22,14 +31,15 @@ body {
 }
 
 .informacoes .descricao {
-    width: 49%;
+    max-width: 49%;
+    
     font-size: 24px;
     color: #fff;
     line-height: 30px;
 }
 
 .botoes-carrossel {
-    background-color: red;
+    
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -51,7 +61,7 @@ body {
 }
 
 .menu-lateral {
-    background-color: aqua;
+    
     position: fixed;
     top: 0px;
     right: 0px;
@@ -76,4 +86,33 @@ body {
 
 .menu-lateral .icone:hover{
     transform: scale(1.2);
+}
+
+.carrossel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrossel .imagem {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+
+.carrossel .imagem.ativa{
+    display: block;
+}
+
+@keyframes mudarImagem{
+    from{
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
 }
