@@ -60,10 +60,10 @@ main:after {
 }
 
 
-/*.botoes-carrossel .botao.selecionado {
+.botoes-carrossel .botao.selecionado {
     background-color: #1d8346;
 }
-*/
+
 
 .botao {
     transition: 0.2s ease-in-out;
